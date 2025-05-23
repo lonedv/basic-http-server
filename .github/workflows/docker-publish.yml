@@ -1,3 +1,5 @@
+# .github/workflows/docker-publish.yml
+
 name: Build and Push Docker Image
 
 on:
@@ -27,4 +29,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: adams365/basic-http-server:latest, adams365/basic-http-server:v1.0
+          tags: |
+            adams365/basic-http-server:latest
+            adams365/basic-http-server:v1.0
